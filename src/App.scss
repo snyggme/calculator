@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9f7e2;
+  font-family: "Source Code Pro";
+}
+
+.container {
+  width: 340px;
+  height: auto;
+  font-size: 25px;
+  background-color: #e0dede;
+  margin: auto;
+  margin-top: 100px;
+  padding: 5px;
+}
+
+#display {
+  width: 100%;
+  min-height: 50px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 40px;
+  word-wrap: break-word;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+#formula {
+  width: 100%;
+  min-height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  text-align: right;
+  color: #7c7b7b;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 280px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #eae8e8;
+}
+
+#zero,
+#clear {
+  grid-column: 1/3;
+}
+
+#seven,
+#eight,
+#nine,
+#four,
+#five,
+#six,
+#one,
+#two,
+#three,
+#zero {
+  background-color: white;
+  font-weight: bold;
+}
+
+#clear,
+#delete {
+  font-size: 20px;
+}
+
+#seven:hover,
+#eight:hover,
+#nine:hover,
+#four:hover,
+#five:hover,
+#six:hover,
+#one:hover,
+#two:hover,
+#three:hover,
+#zero:hover,
+#decimal:hover {
+  background-color: #c4c4c4;
+  border: 2px solid grey;
+}
+
+#divide:hover,
+#multiply:hover,
+#subtract:hover,
+#add:hover,
+#equals:hover {
+  background-color: #2b75c4;
+  border: 2px solid #053d77;
+  color: white;
+}
+
+#clear:hover,
+#delete:hover {
+  background-color: #d33232;
+  border: 2px solid #770909;
+  color: white;
+}
